@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eRC-R9-Lil">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_One1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8q-hm-XOW">
+                                <rect key="frame" x="101.33333333333333" y="575" width="190.66666666666669" height="180.66666666666663"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Colombia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="un4-YW-126"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TF-UU-YPK">
+                                <rect key="frame" x="101.33333333333333" y="145" width="190.66666666666669" height="180.66666666666663"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Colombia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MRZ-Dj-ayi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIv-c0-dl3">
+                                <rect key="frame" x="101.33333333333333" y="371" width="190.66666666666669" height="180.66666666666663"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Colombia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mga-nl-vut"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d8q-hm-XOW" firstAttribute="top" secondItem="hIv-c0-dl3" secondAttribute="bottom" constant="23.333333333333371" id="2gf-YT-i39"/>
+                            <constraint firstItem="hIv-c0-dl3" firstAttribute="centerX" secondItem="8TF-UU-YPK" secondAttribute="centerX" id="55L-3u-8oD"/>
+                            <constraint firstItem="8TF-UU-YPK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FT8-pa-bTZ"/>
+                            <constraint firstItem="d8q-hm-XOW" firstAttribute="centerX" secondItem="hIv-c0-dl3" secondAttribute="centerX" id="M4M-92-Ulj"/>
+                            <constraint firstItem="d8q-hm-XOW" firstAttribute="centerX" secondItem="hIv-c0-dl3" secondAttribute="centerX" id="RXl-e5-eXH"/>
+                            <constraint firstItem="d8q-hm-XOW" firstAttribute="centerX" secondItem="hIv-c0-dl3" secondAttribute="centerX" id="eFi-Eb-PFk"/>
+                            <constraint firstItem="hIv-c0-dl3" firstAttribute="top" secondItem="8TF-UU-YPK" secondAttribute="bottom" constant="45.333333333333371" id="fDq-y1-HYI"/>
+                            <constraint firstItem="8TF-UU-YPK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="g1D-SN-u0R"/>
+                            <constraint firstItem="8TF-UU-YPK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="pwT-9S-uhT"/>
+                            <constraint firstItem="d8q-hm-XOW" firstAttribute="centerX" secondItem="hIv-c0-dl3" secondAttribute="centerX" id="r75-ng-rKv"/>
+                            <constraint firstItem="8TF-UU-YPK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="s7E-ds-6t7"/>
+                            <constraint firstItem="hIv-c0-dl3" firstAttribute="centerX" secondItem="8TF-UU-YPK" secondAttribute="centerX" id="uMk-3a-MAZ"/>
+                            <constraint firstItem="hIv-c0-dl3" firstAttribute="centerX" secondItem="8TF-UU-YPK" secondAttribute="centerX" id="xy7-l7-243"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4RB-Qo-Owd"/>
+                    <connections>
+                        <outlet property="button1" destination="8TF-UU-YPK" id="Uxy-2g-nxD"/>
+                        <outlet property="button2" destination="hIv-c0-dl3" id="nT4-kW-2qZ"/>
+                        <outlet property="button3" destination="d8q-hm-XOW" id="Qug-0X-P23"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-34.507042253521128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K73-CD-qPa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eRC-R9-Lil" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jpc-yq-cdb">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zxi-GR-PPe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXP-RU-jZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Colombia" width="166.66667175292969" height="166.66667175292969"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
