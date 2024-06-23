@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
         askQuestion(action: nil)
         
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(ShareTaped))
         
     }
     func askQuestion(action: UIAlertAction!){
@@ -76,6 +76,14 @@ class ViewController: UIViewController {
                      
         present(ac,animated: true)
           
+    }
+    //@objc is used to ensure that the shareTapped method can be called when the UIBarButtonItem is tapped
+    @objc func ShareTaped(){
+        
+    let scoreString = "My current score is \(score)"
+    let vc = UIActivityViewController(activityItems: [scoreString], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
     }
     
 }
